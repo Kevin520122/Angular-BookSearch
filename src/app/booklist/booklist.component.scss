@@ -1,0 +1,43 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px solid blue;
+    border-radius: 10px;
+    margin: 5px;
+    width: 50%;
+    float: left
+  }
+
+.card:hover {
+  box-shadow: 5px 5px 5px purple;
+  border: none;
+}
+  
+ul {
+  list-style-type: none;
+}
+
+img{
+   margin: 10px;
+}
+
+.button-area{
+  margin: 5px
+}
+
+.description{
+  overflow: auto;
+  margin-bottom: 10px;
+  display: block; /* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-height: 3.6em;
+}
+
+//   @media screen and (min-width: 600px) {
+//     .card{
+//       width: 100%
+//     }
+    
+//   }

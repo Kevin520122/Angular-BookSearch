@@ -1,0 +1,27 @@
+<h3>Book List</h3>
+
+<ul>
+  <li
+    *ngFor="let book of bookService.booklist$ | async"
+  >
+
+  <div class="card">
+    <div class="img">
+        <img [src]="book.bookpic" alt="" />
+    </div>
+    <div class="info">
+      <p>
+        Book Name: {{ book.bookname }}<br>
+        Publisher: {{book.publisher}}<br>
+        Publish Date: {{book.publishdate}}<br>
+        
+        </p>
+        <div class="description">Description: {{book.description}}</div>
+    </div>
+      <div class="button-area">
+        <button (click)="onClickBook(book.bookname)">Add to WishList</button>
+      </div>
+  </div>
+    
+  </li>
+</ul>

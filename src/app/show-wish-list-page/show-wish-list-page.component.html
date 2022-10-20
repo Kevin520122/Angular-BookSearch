@@ -1,0 +1,13 @@
+<h3>Wish List</h3>
+
+<ol>
+  <li *ngFor="let item of bookService.wishes$ | async">
+    <div class="record">
+        <div class="text">
+            Book Name: {{ item }}
+        </div>
+
+    </div>
+    
+  </li>
+</ol>

@@ -1,0 +1,15 @@
+<h3>Wish List</h3>
+
+<ul>
+  <li *ngFor="let item of bookService.wishes$ | async">
+    <div class="record">
+        <div class="text">
+            {{ item }}
+        </div>
+        <div class="button-area">
+            <button (click)="deleteBook(item)">Delete</button>
+        </div>
+    </div>
+    
+  </li>
+</ul>
